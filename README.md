@@ -1,10 +1,10 @@
 # lab-eso-localstack-k8s
 
+# 🧪 Lab: Testando o External Secrets Operator com LocalStack (Secrets Manager) e Kubernetes local — sem conta AWS
+
 Nesse caso, vamos adaptar o laboratório para rodar **o LocalStack dentro do Kubernetes**, mantendo tudo **self-contained** no cluster local (Kind, Minikube, etc.). Isso permite testar o **External Secrets Operator (ESO)** com o **Secrets Manager do LocalStack** sem sair do cluster.
 
 ---
-
-# 🧪 Lab: Testando o External Secrets Operator com LocalStack (Secrets Manager) e Kubernetes local — sem conta AWS
 
 ## ✅ Objetivo
 
