@@ -167,6 +167,11 @@ spec:
 Use o pod do LocalStack para executar o comando:
 
 ```bash
+kubectl exec -it deploy/localstack -- bash
+```
+ou
+
+```bash
 kubectl exec -it deploy/localstack -- sh
 ```
 
@@ -211,9 +216,13 @@ kubectl get secret app-secret -o yaml
 
 Você verá um Secret do tipo `Opaque` com a chave `password` e o valor convertido (base64).
 
+![alt text](image.png)
+
 ```bash
 echo "bWV1LXNlZ3JlZG8=" | base64 -d
 ```
+
+![alt text](image-1.png)
 
 ---
 
