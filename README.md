@@ -112,13 +112,11 @@ helm install external-secrets external-secrets/external-secrets \
   --create-namespace
 ```
 
-
-#### Configure o ESO para usar o LocalStack com AWS_ENDPOINT_URL e a AWS_SECRETSMANAGER_ENDPOINT
+### Atenção:
+#### Configure o ESO para usar o LocalStack com AWS_SECRETSMANAGER_ENDPOINT
 
 Rode isso:
-```bash
-kubectl -n external-secrets set env deployment/external-secrets AWS_ENDPOINT_URL=http://localstack.default.svc.cluster.local:4566
-```
+
 ```bash
 kubectl -n external-secrets set env deployment/external-secrets AWS_SECRETSMANAGER_ENDPOINT=http://localstack.default.svc.cluster.local:4566
 ```
